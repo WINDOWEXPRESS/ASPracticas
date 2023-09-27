@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">你好世界</string>
     <string name="textViewLove">我爱PMDM</string>
@@ -9,7 +8,7 @@
         作为“炸弹”。 每人轮流猜，数字的范围不断缩小，直到有人“踩到炸弹”为止。</string>
     <string name="btReiniciar">重新开始</string>
     <string name="btConfirmar">确认</string>
-    <string name="tVResultado">0 - 100</string>
+    <string name="tVResultado">0 &#8211; 100</string>
     <string name="tV_introducir_numero">请输入数字</string>
     <string name="tVPisaBomba">踩到炸弹！！！</string>
 </resources>
