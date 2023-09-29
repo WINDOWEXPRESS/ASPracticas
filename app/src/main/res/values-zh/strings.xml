@@ -11,4 +11,11 @@
     <string name="tVResultado">0 &#8211; 100</string>
     <string name="tV_introducir_numero">请输入数字</string>
     <string name="tVPisaBomba">踩到炸弹！！！</string>
+    <string name="mostrar">查看</string>
+    <string name="nombre_color">颜色名字</string>
+    <string name="texto_blanco">白色文字</string>
+    <string name="azul">蓝</string>
+    <string name="rojo">红</string>
+    <string name="verde">绿</string>
+    <string name="siuuuuu">Siuuuuu!!!</string>
 </resources>
