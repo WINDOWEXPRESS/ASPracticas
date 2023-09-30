@@ -11,12 +11,16 @@
     <string name="tVResultado">0 - 100</string>
     <string name="tV_introducir_numero">Introducir numero</string>
     <string name="tVPisaBomba">Has pisado BOMBA!!!</string>
+
+    <!--Coloneitor-->
     <string name="mostrar">Mostrar</string>
     <string name="nombre_color">Nombre Color</string>
     <string name="texto_blanco">Texto Blanco</string>
     <string name="siuuuuu">Siuuuuu!!!</string>
-    <string name="azul">Azul</string>
-    <string name="rojo">Rojo</string>
-    <string name="verde">Verde</string>
+    <string name="rojo">R</string>
+    <string name="verde">G</string>
+    <string name="azul">B</string>
+    <string name="valor_color_defecto"> 0 </string>
+
 
 </resources>

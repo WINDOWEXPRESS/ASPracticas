@@ -14,6 +14,10 @@
         android:layout_marginTop="39dp"
         android:layout_marginEnd="57dp"
         android:layout_marginBottom="56dp"
+        android:background="@color/design_default_color_background"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,19 +41,6 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <SeekBar
-        android:id="@+id/u2a2sBAzul"
-        android:layout_width="246dp"
-        android:layout_height="33dp"
-        android:max="255"
-        android:min="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
-
-    <SeekBar
         android:id="@+id/u2a2sBRojo"
         android:layout_width="246dp"
         android:layout_height="33dp"
@@ -57,30 +48,73 @@
         android:min="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.181" />
+        app:layout_constraintVertical_bias="0.212" />
+
+    <SeekBar
+        android:id="@+id/u2a2sBAzul"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
 
     <TextView
-        android:id="@+id/u2a2tVVerde"
-        android:layout_width="65dp"
+        android:id="@+id/u2a2tVValorAzul"
+        android:layout_width="45dp"
         android:layout_height="33dp"
-        android:text="@string/verde"
+        android:text="@string/valor_color_defecto"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/u2a2sBVerde"
-        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u2a2sBVerde"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/u2a2tVValorRojo"
+        android:layout_width="45dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/valor_color_defecto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u2a2sBRojo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <SeekBar
+        android:id="@+id/u2a2sBVerde"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:max="255"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/u2a2tVAzul"
-        android:layout_width="65dp"
+        android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_marginTop="16dp"
         android:text="@string/azul"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/u2a2sBAzul"
@@ -90,30 +124,47 @@
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="TextSizeCheck" />
 
-    <SeekBar
-        android:id="@+id/u2a2sBVerde"
-        android:layout_width="246dp"
+    <TextView
+        android:id="@+id/u2a2tVValorVerde"
+        android:layout_width="45dp"
         android:layout_height="33dp"
-        android:layout_marginEnd="56dp"
-        android:max="255"
-        android:min="0"
+        android:text="@string/valor_color_defecto"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u2a2sBAzul"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView
+        android:id="@+id/u2a2tVVerde"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:text="@string/verde"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/u2a2sBVerde"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/u2a2tVRojo"
-        android:layout_width="65dp"
+        android:layout_width="33dp"
         android:layout_height="33dp"
         android:text="@string/rojo"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/u2a2tVVerde"
         app:layout_constraintEnd_toStartOf="@+id/u2a2sBRojo"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintVertical_bias="0.93" />
 
     <Button
         android:id="@+id/u2a2btMostrar"
@@ -142,7 +193,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465"
+        app:layout_constraintVertical_bias="0.483"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
