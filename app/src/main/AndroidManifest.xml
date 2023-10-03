@@ -13,20 +13,24 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
-            android:name=".u2e2.u2a2Coloneitor"
+            android:name=".u2e3.Propinatron2000"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".AdivinarNumero"
+            android:name=".u2e2.u2a2Coloneitor"
             android:exported="true">
         </activity>
         <activity
-            android:name=".HolaMundo"
+            android:name=".AdivinarNumero"
             android:exported="true"></activity>
+        <activity
+            android:name=".HolaMundo"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -15,15 +15,9 @@ public class u2a2Coloneitor extends AppCompatActivity {
     //Declarar las variables
     EditText nombreColor;
     TextView salida;
-    TextView tVRojo;
-    TextView tVAzul;
-    TextView tVVerde;
-    TextView tVValorR;
-    TextView tVValorG;
-    TextView tVValorB;
-    SeekBar sBRojo;
-    SeekBar sBAzul;
-    SeekBar sBVerde;
+    TextView tVRojo, tVAzul,tVVerde;
+    TextView tVValorR,tVValorG,tVValorB;
+    SeekBar sBRojo,sBAzul, sBVerde;
     Button mostrar;
     Switch textoBlanco;
 
@@ -62,7 +56,7 @@ public class u2a2Coloneitor extends AppCompatActivity {
                 //salida.setTextColor(R.color.black);
                 salida.setTextColor(Color.BLACK);
             }
-            salida.setBackgroundColor(Color.rgb(rangoRojo,rangoAzul,rangoVerde));
+            salida.setBackgroundColor(Color.rgb(rangoRojo,rangoVerde,rangoAzul));
             salida.setText(nombreColor.getText());
 
         });
@@ -72,6 +66,7 @@ public class u2a2Coloneitor extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 tVValorR.setText(""+i);
+                nombreColor.setBackgroundColor(Color.rgb(i,sBVerde.getProgress(),sBAzul.getProgress()));
             }
 
             @Override
@@ -89,6 +84,7 @@ public class u2a2Coloneitor extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 tVValorB.setText(""+i);
+                nombreColor.setBackgroundColor(Color.rgb(sBRojo.getProgress(),sBVerde.getProgress(),i));
             }
 
             @Override
@@ -106,6 +102,7 @@ public class u2a2Coloneitor extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 tVValorG.setText(""+i);
+                nombreColor.setBackgroundColor(Color.rgb(sBRojo.getProgress(),i,sBAzul.getProgress()));
             }
 
             @Override
