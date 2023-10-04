@@ -8,7 +8,7 @@
         \nTodos se turnan para adivinar y el rango de números sigue reduciéndose hasta que alguien "pisa la bomba " .</string>
     <string name="btReiniciar">Reiniciar</string>
     <string name="btConfirmar">Confirmar</string>
-    <string name="tVResultado">0 - 100</string>
+    <string name="tVResultado">0 &#8211; 100</string>
     <string name="tV_introducir_numero">Introducir numero</string>
     <string name="tVPisaBomba">Has pisado BOMBA!!!</string>
 
@@ -21,6 +21,10 @@
     <string name="verde">G</string>
     <string name="azul">B</string>
     <string name="valor_color_defecto"> 0 </string>
+    <string name="malo">Malo</string>
+    <string name="excelente">Excelente</string>
+    <string name="bueno">Bueno</string>
+    <string name="calcular">Calcular</string>
 
 
 </resources>

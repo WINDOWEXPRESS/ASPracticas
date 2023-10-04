@@ -11,6 +11,8 @@
     <string name="tVResultado">0 &#8211; 100</string>
     <string name="tV_introducir_numero">请输入数字</string>
     <string name="tVPisaBomba">踩到炸弹！！！</string>
+
+    <!--Coloneitor-->
     <string name="mostrar">查看</string>
     <string name="nombre_color">颜色名字</string>
     <string name="texto_blanco">白色文字</string>
@@ -18,4 +20,11 @@
     <string name="rojo">红</string>
     <string name="verde">绿</string>
     <string name="siuuuuu">Siuuuuu!!!</string>
+    <string name="valor_color_defecto">0</string>
+
+    <!--PRopinatron2000-->
+    <string name="malo">差</string>
+    <string name="excelente">非常满意</string>
+    <string name="bueno">满意</string>
+    <string name="calcular">计算</string>
 </resources>
