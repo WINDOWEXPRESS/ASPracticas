@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TimePicker;
 
 import com.example.aspracticas.R;
@@ -19,7 +21,7 @@ public class PedirCita extends AppCompatActivity {
     EditText fecha;
     EditText hora;
     Button cofirmar;
-
+    ImageView comprobar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class PedirCita extends AppCompatActivity {
         fecha = findViewById(R.id.u2a5eTextDate);
         hora = findViewById(R.id.u2a5eTextTime);
         cofirmar = findViewById(R.id.u2a5buttonConfirmar);
+        comprobar = findViewById(R.id.u2a5iViewComprobar);
 
         //ESCUCHADOR A TVIEW FECHA PARA OBTENER UNA FECHA
         fecha.setOnClickListener(view -> {
@@ -80,9 +83,11 @@ public class PedirCita extends AppCompatActivity {
         cofirmar.setOnClickListener(view -> {
             ValidacionDni validar = new ValidacionDni();
             if(validar.validarDNI(editTextDni.getText().toString().toUpperCase())){
-                editTextDni.setText("Valido");
+                comprobar.setImageResource(R.drawable.comprobado);
+                comprobar.setVisibility(View.VISIBLE);
             }else{
-                editTextDni.setText("No Valido");
+                comprobar.setImageResource(R.drawable.cancelar);
+                comprobar.setVisibility(View.VISIBLE);
             }
         });
     }
