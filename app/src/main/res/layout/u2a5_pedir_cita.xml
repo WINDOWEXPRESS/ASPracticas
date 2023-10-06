@@ -7,115 +7,124 @@
     tools:context=".u2e5.PedirCita">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="177dp"
-        android:layout_height="56dp"
-        android:text="TextView"
+        android:id="@+id/u2a5tViewNombreEmpresa"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:text="Hotel Four Seasons"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="178dp"
-        android:layout_height="53dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/u2a5iViewIcono"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
         android:layout_marginStart="248dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="565dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/hotel"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="432dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+    <TextView
+        android:id="@+id/u2a5tViewHorario"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        android:text="Horario \nL - V \t09:00 - 14:00"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <EditText
+        android:id="@+id/u2a5eTextDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Introducir"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="74dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="282dp"
-        android:layout_marginBottom="432dp"
-        android:text="TextView"
+        android:id="@+id/u2a5tViewDni"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:text="DNI :"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/u2a5eTextDNI"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
     <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="123dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="227dp"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="311dp"
+        android:id="@+id/u2a5eTextDate"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
         android:ems="10"
-        android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="131dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="359dp"
-        android:layout_marginEnd="210dp"
-        android:layout_marginBottom="311dp"
-        android:ems="10"
+        android:hint="DIA"
         android:inputType="date"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        tools:text="@tools:sample/date/ddmmyy" />
+
+    <EditText
+        android:id="@+id/u2a5eTextTime"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="HORA"
+        android:inputType="time"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/u2a5buttonConfirmar"
         android:layout_width="219dp"
         android:layout_height="140dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="469dp"
         android:layout_marginEnd="96dp"
         android:layout_marginBottom="122dp"
-        android:text="Button"
+        android:text="@string/btConfirmar"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
