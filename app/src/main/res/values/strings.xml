@@ -25,6 +25,13 @@
     <string name="excelente">Excelente</string>
     <string name="bueno">Bueno</string>
     <string name="calcular">Calcular</string>
+    <string name="Nombre_local">Hotel Four Seasons</string>
+    <string name="introducir_dni">Introducir</string>
+    <string name="Hint_fecha">FECHA</string>
+    <string name="Hint_hora">HORA</string>
+    <string name="Mensaje_cita">Su cita se ha guardado satisfactoriamente</string>
+    <string name="tV_dni">DNI :</string>
+    <string name="horario_local">Horario \nL &#8211; V \t09:00 &#8211; 14:00</string>
 
 
 </resources>

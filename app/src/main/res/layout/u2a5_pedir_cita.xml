@@ -10,14 +10,15 @@
         android:id="@+id/u2a5tViewNombreEmpresa"
         android:layout_width="252dp"
         android:layout_height="41dp"
-        android:text="Hotel Four Seasons"
+        android:text="@string/Nombre_local"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.11"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/u2a5iViewIcono"
@@ -25,20 +26,20 @@
         android:layout_height="122dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="35dp"
+        android:importantForAccessibility="no"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033"
-        app:srcCompat="@drawable/hotel"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/hotel" />
 
     <TextView
         android:id="@+id/u2a5tViewHorario"
         android:layout_width="230dp"
         android:layout_height="75dp"
-        android:text="Horario \nL - V \t09:00 - 14:00"
+        android:text="@string/horario_local"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,20 +53,22 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="Introducir"
+        android:hint="@string/introducir_dni"
         android:inputType="text"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintVertical_bias="0.344"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/u2a5tViewDni"
         android:layout_width="75dp"
         android:layout_height="48dp"
-        android:text="DNI :"
+        android:text="@string/tV_dni"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,7 +83,7 @@
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:ems="10"
-        android:hint="DIA"
+        android:hint="@string/Hint_fecha"
         android:inputType="date"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -90,23 +93,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.544"
-        tools:text="@tools:sample/date/ddmmyy" />
+        tools:text="@tools:sample/date/ddmmyy"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/u2a5eTextTime"
         android:layout_width="120dp"
         android:layout_height="70dp"
         android:ems="10"
-        android:hint="HORA"
+        android:hint="@string/Hint_hora"
         android:inputType="time"
         android:textAlignment="center"
+        android:textColorHint="#A1887F"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.762"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.544"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/u2a5buttonConfirmar"
@@ -123,7 +129,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/u2a5iViewComprobar"
@@ -136,6 +143,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.344"
-        app:srcCompat="@drawable/comprobado" />
+        app:srcCompat="@drawable/comprobado"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/u2a5tVSalida"
+        android:layout_width="409dp"
+        android:layout_height="220dp"
+        android:text="@string/Mensaje_cita"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
