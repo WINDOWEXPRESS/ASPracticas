@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/u2a6_fonjuego"
+    tools:context=".u2e6.JuegoPierdraPapelTijera"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:id="@+id/u2a6lLayoutH_VidaBot"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6iView_PerfilBot"
+        app:layout_constraintStart_toStartOf="@+id/u2a6iView_PerfilBot"
+        app:layout_constraintTop_toBottomOf="@+id/u2a6iView_PerfilBot">
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida1Bot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida2Bot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida3Bot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/u2a6iView_PerfilJugador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6tView_IdJugador"
+        app:layout_constraintStart_toStartOf="@+id/u2a6tView_IdJugador"
+        app:layout_constraintTop_toBottomOf="@+id/u2a6tView_IdJugador"
+        app:srcCompat="@drawable/u2a6_avatar_jugador_hacker"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/u2a6iView_PerfilBot"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6tView_IdBot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u2a6tView_IdBot"
+        app:layout_constraintTop_toBottomOf="@+id/u2a6tView_IdBot"
+        app:srcCompat="@drawable/u2a6_avatar_bot_monstruo"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/u2a6lLayoutH_VidaJugador"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6iView_PerfilJugador"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u2a6iView_PerfilJugador"
+        app:layout_constraintTop_toBottomOf="@+id/u2a6iView_PerfilJugador">
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida1Jugador"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida2Jugador"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/u2a6iView_Vida3Jugador"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/u2a6_vida_llena"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/u2a6tView_IdBot"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/u2a6_botName"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/u2a6tView_IdJugador"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/u2a6_nombre_jugador"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/u2a6tView_Ronda"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/u2a6_ronda"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/u2a6iView_PerfilBot"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/u2a6iView_PerfilJugador"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/u2a6_iView_Piedra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:contentDescription="@string/u2a6_piedra"
+        app:layout_constraintBottom_toTopOf="@+id/u2a6_iView_Papel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/u2a6_roca" />
+
+    <ImageView
+        android:id="@+id/u2a6_iView_Tijera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="56dp"
+        android:contentDescription="@string/u2a6_tijera"
+        app:layout_constraintBottom_toTopOf="@+id/u2a6_iView_Papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/u2a6_iView_Piedra"
+        app:srcCompat="@drawable/u2a6_tijeras" />
+
+    <ImageView
+        android:id="@+id/u2a6_iView_Papel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="312dp"
+        android:contentDescription="@string/u2a6_papel"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6_iView_Tijera"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/u2a6_iView_Piedra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/u2a6_papel" />
+
+    <Button
+        android:id="@+id/u2a6_bt_Reiniciar"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btReiniciar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/u2a6_bt_CambiarAspecto"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/u2a6_cambiar_aspecto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/u2a6_tView_opcionBot"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/u2a6_mensaje_bot"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/u2a6_tView_SalidaMensaje"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/u2a6_mensaje_Global"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/u2a6_tView_opcionBot"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="@+id/u2a6_tView_opcionBot"
+        app:layout_constraintTop_toBottomOf="@+id/u2a6_tView_opcionBot"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/u2a6_bt_Confirmar"
+        android:layout_width="115dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btConfirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/u2a6_bt_Reiniciar"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/u2a6_bt_CambiarAspecto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

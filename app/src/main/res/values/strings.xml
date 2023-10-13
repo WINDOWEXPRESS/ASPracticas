@@ -7,6 +7,7 @@
         Las reglas del juego también son muy sencillas: Un número aleatorio entre 0 y 100 como "bomba".
         \nTodos se turnan para adivinar y el rango de números sigue reduciéndose hasta que alguien "pisa la bomba " .</string>
     <string name="btReiniciar">Reiniciar</string>
+    <string name="btCancelar">Cancelar</string>
     <string name="btConfirmar">Confirmar</string>
     <string name="tVResultado">0 &#8211; 100</string>
     <string name="tV_introducir_numero">Introducir numero</string>
@@ -33,5 +34,25 @@
     <string name="tV_dni">DNI :</string>
     <string name="horario_local">Horario \nL &#8211; V \t09:00 &#8211; 14:00</string>
 
+    <!--Juego piedra papel tijera-->
+    <string name="u2a6_cambiar_aspecto">Cambiar\n Aspecto</string>
+    <string name="u2a6_papel">Papel</string>
+    <string name="u2a6_piedra">Piedra</string>
+    <string name="u2a6_tijera">Tijera</string>
+    <string name="u2a6_mensaje_Global">"Has elegido : "</string>
+    <string name="u2a6_mensaje_opcion_jugador">Has elegido : %s</string>
+    <string name="u2a6_mensaje_bot">Bot ya ha elegido.</string>
+    <string name="u2a6_mensaje_opcion_bot">Bot ha eligido : %s</string>
+    <string name="u2a6_botName">Bot</string>
+    <string name="u2a6_nombre_jugador">Jugador</string>
+    <string name="u2a6_ronda">Ronda</string>
+    <string name="u2a6_ronda_siguiente">Ronda %d</string>
+    <string name="u2a6_ronda_empate">Empate</string>
+    <string name="u2a6_ronda_ganado">¡Ganaste!</string>
+    <string name="u2a6_ronda_perdido">¡Bot gana!</string>
+    <string name="u2a6_fin_de_juego_ganado">Fin de Juego.\\n\nHas ganado!!!</string>
+    <string name="u2a6_fin_de_juego_perdido">Fin de Juego.\nHas perdido!!!</string>
+    <string name="u2a6_titulo_dialogo_reiniciar">Importante</string>
+    <string name="u2a6_mensaje_dialogo_reiniciar">La partida no ha terminado todavía ,¿ Seguro quieres reiniciar ?</string>
 
 </resources>
