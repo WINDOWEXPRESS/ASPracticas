@@ -50,7 +50,7 @@
     <string name="u2a6_ronda_empate">Empate</string>
     <string name="u2a6_ronda_ganado">¡Ganaste!</string>
     <string name="u2a6_ronda_perdido">¡Bot gana!</string>
-    <string name="u2a6_fin_de_juego_ganado">Fin de Juego.\\n\nHas ganado!!!</string>
+    <string name="u2a6_fin_de_juego_ganado">Fin de Juego.\nHas ganado!!!</string>
     <string name="u2a6_fin_de_juego_perdido">Fin de Juego.\nHas perdido!!!</string>
     <string name="u2a6_titulo_dialogo_reiniciar">Importante</string>
     <string name="u2a6_mensaje_dialogo_reiniciar">La partida no ha terminado todavía ,¿ Seguro quieres reiniciar ?</string>
