@@ -19,6 +19,10 @@ import android.widget.TextView;
 import com.example.aspracticas.R;
 
 public class JuegoPierdraPapelTijera extends AppCompatActivity {
+/*
+    Bug al girar V o H la animacion de vida restante falla y
+    numero de ronda
+*/
 
     //Declarar variables
     ImageView vida1_Bot, vida2_Bot, vida3_Bot;
@@ -215,6 +219,7 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
         int min = 1; // Número mínimo (inclusive)
         int max = 3; // Número máximo (inclusive)
         int numeroAleatorio = (int) (Math.random() * (max - min + 1) + min);
+        //crear una array de ENUM .values() todas instancias de ENUM
         Opcion[] opciones = Opcion.values();
         // Usar un bucle for para recorrer la enumeración
         for (Opcion opcion : opciones) {
@@ -250,6 +255,7 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
         rondaNueva();
         mensajeSalida.setText(R.string.u2a6_mensaje_Global);
         mensajeBot.setText(R.string.u2a6_mensaje_bot);
+        gameOver = false;
 
         //configurar las imagenView clickeable
         tijera.setClickable(true);
