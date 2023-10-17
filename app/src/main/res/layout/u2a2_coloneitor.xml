@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2e2.u2a2Coloneitor">
+    tools:context=".ut02.u2e2.u2a2Coloneitor">
 
     <TextView
         android:id="@+id/u2a2tVSalida"

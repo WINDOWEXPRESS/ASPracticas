@@ -1,4 +1,4 @@
-package com.example.aspracticas.u2e5;
+package com.example.aspracticas.ut02.u2e5;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2e5.PedirCita">
+    tools:context=".ut02.u2e5.PedirCita">
 
     <TextView
         android:id="@+id/u2a5tViewNombreEmpresa"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/u2a6_fonjuego"
-    tools:context=".u2e6.JuegoPierdraPapelTijera"
+    tools:context=".ut02.u2e6.JuegoPierdraPapelTijera"
     tools:ignore="ContentDescription">
 
     <LinearLayout
