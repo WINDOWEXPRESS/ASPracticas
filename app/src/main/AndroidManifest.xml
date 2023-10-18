@@ -15,6 +15,18 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
+            android:name=".ut03.u3e2.VisualizadorResultado"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.u3e2.Calculator_With_Two_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ut03.u3e1.u3a1_Lanzada"
             android:exported="false" />
         <activity
