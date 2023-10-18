@@ -54,4 +54,14 @@
     <string name="btCancelar">取消</string>
     <string name="u2a6_titulo_dialogo_reiniciar">警告</string>
     <string name="u2a6_mensaje_dialogo_reiniciar">比赛还没结束，确定要重开吗?</string>
+    <string name="u3a2_insertar_numero">输入数字</string>
+    <string name="u3a2_Dividir">/</string>
+    <string name="u3a2_Multiplicar">*</string>
+    <string name="u3a2_Restar">-</string>
+    <string name="u3a2_titulo">简单计算器</string>
+    <string name="u3a2_volver">返回</string>
+    <string name="u3a2_resultado_indefinido">未定义的结果</string>
+    <string name="u3a2_no_se_puede_dividir_entre_cero">不能被零整除</string>
+    <string name="u3a2_resultado">%d</string>
+    <string name="u3a2_mensaje_error">Error los campos estan incompleto!!!</string>
 </resources>

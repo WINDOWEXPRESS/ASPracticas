@@ -7,47 +7,60 @@
     tools:context=".ut03.u3e2.Calculator_With_Two_Activity">
 
     <EditText
-        android:id="@+id/u3a2_eText_Num2"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="Numero"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
-
-    <EditText
         android:id="@+id/u3a2_eText_Num1"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:hint="Numero"
+        android:autofillHints=""
+        android:hint="@string/u3a2_insertar_numero"
         android:inputType="number|numberDecimal"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="@+id/u3a2_eText_Num2"
         app:layout_constraintEnd_toStartOf="@+id/u3a2_eText_Num2"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/u3a2_eText_Num2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/u3a2_insertar_numero"
+        android:inputType="number|numberDecimal"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/u3a2_tView_ErrorNum"
+        android:id="@+id/u3a2_tView_Titulo"
         android:layout_width="330dp"
         android:layout_height="30dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/u3a2_titulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/u3a2_eText_Num2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="@+id/u3a2_eText_Num1"
-        app:layout_constraintTop_toBottomOf="@+id/u3a2_eText_Num2" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
-        android:id="@+id/u3a2_tView_ErrorOperador"
-        android:layout_width="192dp"
-        android:layout_height="30dp"
+        android:id="@+id/u3a2_tView_ErrorMensaje"
+        android:layout_width="241dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/u3a2_rGroup_Operador"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/u3a2_rGroup_Operador"
         app:layout_constraintTop_toBottomOf="@+id/u3a2_rGroup_Operador" />
 
@@ -67,25 +80,26 @@
             android:id="@+id/u3a2_rButton_Suma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+" />
+            android:text="+"
+            tools:ignore="HardcodedText" />
 
         <RadioButton
             android:id="@+id/u3a2_rButton_Resta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-" />
+            android:text="@string/u3a2_Restar" />
 
         <RadioButton
             android:id="@+id/u3a2_rButton_Multi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="*" />
+            android:text="@string/u3a2_Multiplicar" />
 
         <RadioButton
             android:id="@+id/u3a2_rButton_Divi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/" />
+            android:text="@string/u3a2_Dividir" />
     </RadioGroup>
 
     <Button
@@ -93,11 +107,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="188dp"
-        android:text="Calcular"
+        android:text="@string/calcular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u3a2_tView_ErrorOperador"
+        app:layout_constraintTop_toBottomOf="@+id/u3a2_tView_ErrorMensaje"
         app:layout_constraintVertical_bias="0.98" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

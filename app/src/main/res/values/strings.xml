@@ -54,5 +54,15 @@
     <string name="u2a6_fin_de_juego_perdido">Fin de Juego.\nHas perdido!!!</string>
     <string name="u2a6_titulo_dialogo_reiniciar">Importante</string>
     <string name="u2a6_mensaje_dialogo_reiniciar">La partida no ha terminado todavía ,¿ Seguro quieres reiniciar ?</string>
+    <string name="u3a2_insertar_numero">Insertar Numero</string>
+    <string name="u3a2_Dividir">/</string>
+    <string name="u3a2_Multiplicar">*</string>
+    <string name="u3a2_Restar">-</string>
+    <string name="u3a2_titulo">Calculadora Simple</string>
+    <string name="u3a2_volver">Volver</string>
+    <string name="u3a2_resultado_indefinido">Resultado indefinido</string>
+    <string name="u3a2_no_se_puede_dividir_entre_cero">No se puede dividir entre cero</string>
+    <string name="u3a2_resultado">%d</string>
+    <string name="u3a2_mensaje_error">Error los campos estan incompleto!!!</string>
 
 </resources>

@@ -8,17 +8,24 @@
 
     <TextView
         android:id="@+id/u3a2_tView_Salida"
-        android:layout_width="153dp"
-        android:layout_height="197dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="160dp" />
+        android:layout_width="324dp"
+        android:layout_height="232dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/u3a2_bt_Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/u3a2_bt_Volver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="510dp" />
+        android:text="@string/u3a2_volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 </androidx.constraintlayout.widget.ConstraintLayout>
