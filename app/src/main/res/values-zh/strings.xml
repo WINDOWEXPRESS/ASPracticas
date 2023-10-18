@@ -63,5 +63,5 @@
     <string name="u3a2_resultado_indefinido">未定义的结果</string>
     <string name="u3a2_no_se_puede_dividir_entre_cero">不能被零整除</string>
     <string name="u3a2_resultado">%d</string>
-    <string name="u3a2_mensaje_error">Error los campos estan incompleto!!!</string>
+    <string name="u3a2_mensaje_error">错误，字段不完整！！！</string>
 </resources>
