@@ -80,7 +80,7 @@
             android:id="@+id/u3a2_rButton_Suma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"
+            android:text="@string/u3a2_Sumar"
             tools:ignore="HardcodedText" />
 
         <RadioButton

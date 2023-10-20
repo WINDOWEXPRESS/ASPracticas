@@ -34,16 +34,18 @@ public class VisualizadorResultado extends AppCompatActivity {
         //mostrar mensaje en la salida tras abrir la actividad y hacer operacion
         mostrarOperaciones(idOperador);
 
-        volver.setOnClickListener(view -> volver());
+        volver.setOnClickListener(view -> finish());
     }
 
     private void mostrarOperaciones(int idOperador){
-        int resultado = R.string.u3a2_resultado;
+
+        String resultado = getResources().getString(R.string.u3a2_resultado).toString();
+
         if (idOperador == Operador.SUMA.getRId()){
-            salida.setText((numero1+numero2));
+            salida.setText(String.format(resultado,(double)(numero1+numero2)) );
         }
         if (idOperador == Operador.RESTA.getRId()){
-            salida.setText((numero1-numero2));
+            salida.setText(String.format(resultado,(double)(numero1-numero2)));
         }
         if (idOperador == Operador.DIVIDIR.getRId()){
             if(numero1 == 0 && numero2 == 0){
@@ -51,17 +53,14 @@ public class VisualizadorResultado extends AppCompatActivity {
             } else if (numero2 == 0) {
                 salida.setText(R.string.u3a2_no_se_puede_dividir_entre_cero);
             } else if (numero1 == 0) {
-                salida.setText(0);
+                salida.setText(String.format(resultado,0.00));
             }else {
-                salida.setText(resultado+(numero1/numero2));
+                salida.setText(String.format(resultado,(numero1/(double)numero2)));
             }
         }
         if (idOperador == Operador.MULTIPLICAR.getRId()){
-            salida.setText(resultado+(numero1*numero2));
+            salida.setText(String.format(resultado,(double)(numero1*numero2)));
         }
-    }
-    private void volver(){
-        Intent intent = new Intent(this, Calculator_With_Two_Activity.class);
-        startActivity(intent);
+        //salida.setText(Operador.RESTA.getRId()+" "+Operador.SUMA.getRId()+" "+Operador.DIVIDIR.getRId()+" " + Operador.MULTIPLICAR.getRId()+" "+idOperador);
     }
 }

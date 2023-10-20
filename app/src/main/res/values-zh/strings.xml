@@ -34,6 +34,8 @@
     <string name="Mensaje_cita">您的预约已成功保存</string>
     <string name="tV_dni">DNI :</string>
     <string name="horario_local">营业时间 \n星期一 &#8211; 星期五 \t09:00 &#8211; 14:00</string>
+
+    <!--石头剪刀布-->
     <string name="u2a6_cambiar_aspecto">更换皮肤</string>
     <string name="u2a6_papel">布</string>
     <string name="u2a6_piedra">石头</string>
@@ -62,6 +64,7 @@
     <string name="u3a2_volver">返回</string>
     <string name="u3a2_resultado_indefinido">未定义的结果</string>
     <string name="u3a2_no_se_puede_dividir_entre_cero">不能被零整除</string>
-    <string name="u3a2_resultado">%d</string>
+    <string name="u3a2_resultado">%.2f</string>
     <string name="u3a2_mensaje_error">错误，字段不完整！！！</string>
+    <string name="u3a2_Sumar">+</string>
 </resources>
