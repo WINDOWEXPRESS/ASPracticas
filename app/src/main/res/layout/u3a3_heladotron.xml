@@ -7,10 +7,157 @@
     tools:context=".ut03.u3e3.Heladotron">
 
     <TextView
+        android:id="@+id/u3a3_tView_Vainilla_Cantidad"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Vainilla"
+        app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Vainilla"
+        app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Vainilla" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Fresa_Cantidad"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Fresa"
+        app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Fresa"
+        app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Fresa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Chocolate_Cantidad"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Cocholate"
+        app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Cocholate"
+        app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Cocholate" />
+
+    <Spinner
+        android:id="@+id/u3a3_spinner_Recipiente"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:entries="@array/recipienteHelado"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Vainilla"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:text="Vainilla"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Chocolate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Chocolate"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a3_tView_Vainilla"
+        app:layout_constraintTop_toBottomOf="@+id/u3a3_tView_Vainilla" />
+
+    <LinearLayout
+        android:id="@+id/u3a3_lLayout_Cocholate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_tView_Chocolate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u3a3_tView_Chocolate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/u3a3_tView_Restar_Cocholate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bt"
+            android:gravity="center"
+            android:text="@string/u3a2_Restar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <SeekBar
+            android:id="@+id/u3a3_sBar_Chocolate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/u3a3_tView_Sumar_Cocholate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bt"
+            android:gravity="center"
+            android:text="@string/u3a2_Sumar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/u3a3_lLayout_Vainilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_tView_Vainilla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u3a3_tView_Vainilla"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/u3a3_tView_Restar_Vainilla"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt"
+            android:gravity="center"
+            android:text="@string/u3a2_Restar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <SeekBar
+            android:id="@+id/u3a3_sBar_Vainilla"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:max="10"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/u3a3_tView_Sumar_Vainilla"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bt"
+            android:gravity="center"
+            android:text="@string/u3a2_Sumar"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
         android:id="@+id/u3a3_tView_Fresa"
         android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
         android:text="Fresa"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +188,7 @@
             android:textSize="24sp" />
 
         <SeekBar
-            android:id="@+id/seekBar"
+            android:id="@+id/u3a3_sBar_Fresa"
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:max="10"
@@ -59,131 +206,28 @@
 
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="255dp"
-        android:layout_height="63dp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <TextView
-        android:id="@+id/u3a3_tView_Chocolate"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="36dp"
-        android:text="Chocolate"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/u3a3_tView_Vainilla"
-        app:layout_constraintTop_toBottomOf="@+id/u3a3_tView_Vainilla" />
-
-    <LinearLayout
-        android:id="@+id/u3a3_lLayout_Vainilla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/u3a3_tView_Vainilla"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/u3a3_tView_Vainilla"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/u3a3_tView_Restar_Vainilla"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:background="@drawable/bt"
-            android:gravity="center"
-            android:text="@string/u3a2_Restar"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:max="10"
-            android:progress="0" />
-
-        <TextView
-            android:id="@+id/u3a3_tView_Sumar_Vainilla"
-            android:layout_width="41dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/bt"
-            android:gravity="center"
-            android:text="@string/u3a2_Sumar"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/u3a3_lLayout_Cocholate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/u3a3_tView_Chocolate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/u3a3_tView_Chocolate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/u3a3_tView_Restar_Cocholate"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/bt"
-            android:gravity="center"
-            android:text="@string/u3a2_Restar"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:max="10"
-            android:progress="0" />
-
-        <TextView
-            android:id="@+id/u3a3_tView_Sumar_Cocholate"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/bt"
-            android:gravity="center"
-            android:text="@string/u3a2_Sumar"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/u3a3_tView_Vainilla"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="156dp"
-        android:text="Vainilla"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="91dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="160dp"
+        android:id="@+id/u3a3_bt_Confimar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:autoLink="none"
-        android:text="Button"
+        android:text="@string/btConfirmar"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:toggleCheckedStateOnClick="true" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Recipiente"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Recipiente : "
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3_spinner_Recipiente"
+        app:layout_constraintEnd_toStartOf="@+id/u3a3_spinner_Recipiente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
