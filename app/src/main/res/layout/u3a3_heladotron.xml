@@ -10,7 +10,9 @@
         android:id="@+id/u3a3_tView_Vainilla_Cantidad"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:textSize="20sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Vainilla"
         app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Vainilla"
         app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Vainilla" />
@@ -19,7 +21,9 @@
         android:id="@+id/u3a3_tView_Fresa_Cantidad"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:textSize="20sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Fresa"
         app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Fresa"
         app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Fresa"
@@ -29,22 +33,12 @@
         android:id="@+id/u3a3_tView_Chocolate_Cantidad"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:textSize="20sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/u3a3_lLayout_Cocholate"
         app:layout_constraintStart_toEndOf="@+id/u3a3_lLayout_Cocholate"
         app:layout_constraintTop_toTopOf="@+id/u3a3_lLayout_Cocholate" />
-
-    <Spinner
-        android:id="@+id/u3a3_spinner_Recipiente"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="380dp"
-        android:entries="@array/recipienteHelado"
-        android:spinnerMode="dialog"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.848"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/u3a3_tView_Vainilla"
@@ -224,10 +218,34 @@
         android:id="@+id/u3a3_tView_Recipiente"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
         android:text="Recipiente : "
         android:textAlignment="viewEnd"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/u3a3_spinner_Recipiente"
         app:layout_constraintEnd_toStartOf="@+id/u3a3_spinner_Recipiente" />
+
+    <Spinner
+        android:id="@+id/u3a3_spinner_Recipiente"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="420dp"
+        android:entries="@array/recipienteHelado"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u3a3_tView_Error_Cantidad_0"
+        android:layout_width="246dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/u3a3_tView_Fresa_Cantidad"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="@+id/u3a3_tView_Fresa"
+        app:layout_constraintTop_toBottomOf="@+id/u3a3_lLayout_Fresa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

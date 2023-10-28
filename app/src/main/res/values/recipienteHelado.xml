@@ -3,8 +3,7 @@
 
     <string-array name="recipienteHelado">
         <item >Cucurucho</item>
-        <item >Cucu</item>
-        <item>Choco</item>
+        <item >Cucu.Choco</item>
         <item >Tarina</item>
     </string-array>
 </resources>

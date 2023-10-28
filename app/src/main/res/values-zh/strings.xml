@@ -56,6 +56,8 @@
     <string name="btCancelar">取消</string>
     <string name="u2a6_titulo_dialogo_reiniciar">警告</string>
     <string name="u2a6_mensaje_dialogo_reiniciar">比赛还没结束，确定要重开吗?</string>
+
+    <!--Calculadora simple-->
     <string name="u3a2_insertar_numero">输入数字</string>
     <string name="u3a2_Dividir">/</string>
     <string name="u3a2_Multiplicar">*</string>
@@ -67,4 +69,8 @@
     <string name="u3a2_resultado">%.2f</string>
     <string name="u3a2_mensaje_error">错误，字段不完整！！！</string>
     <string name="u3a2_Sumar">+</string>
+
+    <!--Heladotron-->
+    <string name="u3a3_cantidad_pedido">%d</string>
+    <string name="u3a3_error_cantidad_0">错误，数量0 !!!</string>
 </resources>

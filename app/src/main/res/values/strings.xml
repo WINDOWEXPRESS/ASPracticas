@@ -68,4 +68,8 @@
     <string name="u3a2_mensaje_error">Error los campos estan incompleto!!!</string>
     <string name="u3a2_Sumar">+</string>
 
+    <!--Heladotron-->
+    <string name="u3a3_cantidad_pedido">%d</string>
+    <string name="u3a3_error_cantidad_0">Error cantidad 0!!!</string>
+
 </resources>

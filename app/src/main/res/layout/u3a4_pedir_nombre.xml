@@ -7,7 +7,7 @@
     tools:context=".ut03.u3e4.PedirNombre">
 
     <EditText
-        android:id="@+id/u3a4_dText_nombre"
+        android:id="@+id/u3a4_eText_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="222dp"
