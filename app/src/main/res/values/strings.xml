@@ -72,4 +72,7 @@
     <string name="u3a3_cantidad_pedido">%d</string>
     <string name="u3a3_error_cantidad_0">Error cantidad 0!!!</string>
 
+    <!--Fibonacci-->
+    <string name="u3a5_valor_uno">1</string>
+
 </resources>

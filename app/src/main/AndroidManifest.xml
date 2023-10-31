@@ -15,7 +15,7 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
-            android:name=".ut03.u3e4.MostrarNombre"
+            android:name=".ut03.u3e6.AnalizarLetrasTexto"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +24,26 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ut03.u3e5.SiguienteNumero"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.u3e5.Fibonacci"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.u3e4.MostrarNombre"
+            android:exported="false" />
+        <activity
             android:name=".ut03.u3e4.PedirNombre"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ut03.u3e3.Heladotron"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ut03.u3e3.MostrarHelado"
             android:exported="false" />

@@ -73,4 +73,5 @@
     <!--Heladotron-->
     <string name="u3a3_cantidad_pedido">%d</string>
     <string name="u3a3_error_cantidad_0">错误，数量0 !!!</string>
+    <string name="u3a5_valor_uno">1</string>
 </resources>
