@@ -15,6 +15,9 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
+            android:name=".ut03.u3e6.AnalizadorLetras"
+            android:exported="false" />
+        <activity
             android:name=".ut03.u3e6.AnalizarLetrasTexto"
             android:exported="true">
             <intent-filter>
