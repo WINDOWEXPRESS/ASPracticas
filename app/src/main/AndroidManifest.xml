@@ -15,16 +15,26 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
-            android:name=".ut03.u3e6.AnalizadorLetras"
+            android:name=".ut03.u3e7.PerfilArmas"
             android:exported="false" />
         <activity
-            android:name=".ut03.u3e6.AnalizarLetrasTexto"
+            android:name=".ut03.u3e7.PerfilPersonajes"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.u3e7.SelectorPersonajes"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut03.u3e6.AnalizadorLetras"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.u3e6.AnalizarLetrasTexto"
+            android:exported="false">
         </activity>
         <activity
             android:name=".ut03.u3e5.SiguienteNumero"

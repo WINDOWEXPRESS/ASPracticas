@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopuente"
+    tools:context=".ut03.u3e7.SelectorPersonajes">
+
+    <ImageView
+        android:id="@+id/u3a7_iView_personaje2"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a7_iView_personaje1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/u3a7_bt_ajuste"
+        app:srcCompat="@drawable/leonardo" />
+
+    <ImageView
+        android:id="@+id/u3a7_iView_personaje1"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/u3a7_bt_ajuste"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/donatello" />
+
+    <ImageView
+        android:id="@+id/u3a7_iView_arma2"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje2"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_personaje2"
+        app:srcCompat="@drawable/ametralladora" />
+
+    <ImageView
+        android:id="@+id/u3a7_iView_arma1"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_personaje1"
+        app:srcCompat="@drawable/ak_47" />
+
+    <TextView
+        android:id="@+id/u3a7_tView_jugador1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="P1"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7_iView_personaje1"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje1" />
+
+    <TextView
+        android:id="@+id/u3a7_tView_jugador2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="P2"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/u3a7_iView_personaje2"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje2"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje2" />
+
+    <Button
+        android:id="@+id/u3a7_bt_seleccionar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Seleccionar"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_arma1"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_arma1"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_arma1" />
+
+    <Button
+        android:id="@+id/u3a7_bt_seleccionar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Seleccionar"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_arma2"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_iView_arma2"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_arma2" />
+
+    <ImageView
+        android:id="@+id/u3a7_iView_titulo"
+        android:layout_width="403dp"
+        android:layout_height="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_4_gluslatem" />
+
+    <Button
+        android:id="@+id/u3a7_bt_jugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Jugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_titulo" />
+
+    <Button
+        android:id="@+id/u3a7_bt_ajuste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Ajuste"
+        app:layout_constraintEnd_toEndOf="@+id/u3a7_bt_jugar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a7_bt_jugar"
+        app:layout_constraintTop_toBottomOf="@+id/u3a7_bt_jugar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

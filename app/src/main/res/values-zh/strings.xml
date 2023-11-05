@@ -74,4 +74,7 @@
     <string name="u3a3_cantidad_pedido">%d</string>
     <string name="u3a3_error_cantidad_0">错误，数量0 !!!</string>
     <string name="u3a5_valor_uno">1</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="analizar">Analizar</string>
+    <string name="introducir_el_texto">Introducir el texto</string>
 </resources>
