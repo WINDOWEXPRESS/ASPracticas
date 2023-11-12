@@ -12,5 +12,14 @@
     <color name="colorVainilla">#FFEB3B</color>
     <color name="colorChocolate">#91754A</color>
     <color name="colorFresa">#95E91E63</color>
-
+    <color name="rojo">#FF0000</color>
+    <color name="verde">#00FF00</color>
+    <color name="azul">#0000FF</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="cian">#00FFFF</color>
+    <color name="purpura">#800080</color>
+    <color name="naranja">#FFA500</color>
+    <color name="verde_oscuro">#008000</color>
+    <color name="azul_oscuro">#000080</color>
 </resources>

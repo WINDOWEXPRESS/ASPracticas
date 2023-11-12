@@ -35,6 +35,7 @@ public class PerfilPersonajes extends AppCompatActivity {
     ArmasEnum[] listaArmasEnum = ArmasEnum.values();
     String personajeSeleccionado1,armaSeleccionado1 ;
     String personajeSeleccionado2 , armaSeleccionado2;
+    Boolean personajeArmaSinElegir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,21 +51,22 @@ public class PerfilPersonajes extends AppCompatActivity {
 
         addListaPersonajes();
 
-        Bundle datos = getIntent().getExtras();
-         personajeSeleccionado1 = datos.getString(SelectorPersonajes.CLAVE_PERSONAJE1);
-         armaSeleccionado1 = datos.getString(SelectorPersonajes.CLAVE_ARMA1);
-         personajeSeleccionado2 = datos.getString(SelectorPersonajes.CLAVE_PERSONAJE2);
-         armaSeleccionado2 = datos.getString(SelectorPersonajes.CLAVE_ARMA2);
-
 
         donatello.setOnClickListener(v -> personajeSeleccionado(v));
         michealangelo.setOnClickListener(v -> personajeSeleccionado(v));
         leonardo.setOnClickListener(v -> personajeSeleccionado(v));
         rafael.setOnClickListener(v -> personajeSeleccionado(v));
-        //if(personajeSeleccionado1 != null||personajeSeleccionado2 != null){
-            bloquearPersonaje(personajeSeleccionado1, personajeSeleccionado2);
-        //}
+        Bundle datos = getIntent().getExtras();
+        if(personajeArmaSinElegir = datos.getBoolean(SelectorPersonajes.CLAVE_PERSONAJES_ARMAS_SIN_ELEGIR) == false){
+            personajeSeleccionado1 = datos.getString(SelectorPersonajes.CLAVE_PERSONAJE1);
+            armaSeleccionado1 = datos.getString(SelectorPersonajes.CLAVE_ARMA1);
+            personajeSeleccionado2 = datos.getString(SelectorPersonajes.CLAVE_PERSONAJE2);
+            armaSeleccionado2 = datos.getString(SelectorPersonajes.CLAVE_ARMA2);
 
+            //if(personajeSeleccionado1 != null||personajeSeleccionado2 != null){
+            bloquearPersonaje(personajeSeleccionado1, personajeSeleccionado2);
+            //}
+        }
 
         ActivityResultLauncher<Intent> lanzadora = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), (result) -> {
             if (result.getResultCode() == Activity.RESULT_OK) {
@@ -85,10 +87,6 @@ public class PerfilPersonajes extends AppCompatActivity {
 
         arma.setOnClickListener(v -> {
             Intent datosEnviar = new Intent(this, PerfilArmas.class);
-            //pasar id de los personajes y las armas para que no pueda elegirlo
-            datosEnviar.putExtra(CLAVE_ARMA1_ENVIAR, armaSeleccionado1);
-            datosEnviar.putExtra(CLAVE_ARMA2_ENVIAR, armaSeleccionado2);
-
             lanzadora.launch(datosEnviar);
         });
 
@@ -97,6 +95,7 @@ public class PerfilPersonajes extends AppCompatActivity {
                 Intent devolverDatos = new Intent();
                 devolverDatos.putExtra(CLAVE_PERSONAJE_SELECCIONADO, personajeSeleccionado.toString());
                 devolverDatos.putExtra(CLAVE_ARMA_SELECCIONADO, armaSeleccionado.toString());
+                //devolverDatos.putExtra(CLAVE_ARMA_SELECCIONADO, armaSeleccionado.toString());
                 setResult(Activity.RESULT_OK,devolverDatos);
                 finish();
             }

@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/u3a7_bt_ajuste"
-        app:srcCompat="@drawable/leonardo" />
+        app:srcCompat="@drawable/tortuga" />
 
     <ImageView
         android:id="@+id/u3a7_iView_personaje1"
@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toStartOf="@+id/u3a7_bt_ajuste"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/donatello" />
+        app:srcCompat="@drawable/tortuga" />
 
     <ImageView
         android:id="@+id/u3a7_iView_arma2"
@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje2"
         app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje2"
         app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_personaje2"
-        app:srcCompat="@drawable/ametralladora" />
+        app:srcCompat="@drawable/bloquear" />
 
     <ImageView
         android:id="@+id/u3a7_iView_arma1"
@@ -44,13 +44,13 @@
         app:layout_constraintEnd_toEndOf="@+id/u3a7_iView_personaje1"
         app:layout_constraintStart_toStartOf="@+id/u3a7_iView_personaje1"
         app:layout_constraintTop_toBottomOf="@+id/u3a7_iView_personaje1"
-        app:srcCompat="@drawable/ak_47" />
+        app:srcCompat="@drawable/bloquear" />
 
     <TextView
         android:id="@+id/u3a7_tView_jugador1"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="P1"
+        android:text="Jugador 1"
         android:textAlignment="center"
         android:textColor="#FFEB3B"
         android:textSize="24sp"
@@ -62,7 +62,7 @@
         android:id="@+id/u3a7_tView_jugador2"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="P2"
+        android:text="Jugador 2"
         android:textAlignment="center"
         android:textColor="#FFEB3B"
         android:textSize="24sp"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="lista_de_colores">
+        <item>rojo</item>
+        <item>verde</item>
+        <item>azul</item>
+        <item>amarillo</item>
+        <item>magenta</item>
+        <item>cian</item>
+        <item>purpura</item>
+        <item>naranja</item>
+        <item>verde_oscuro</item>
+        <item>azul_oscuro</item>
+        <!-- Puedes añadir más colores según tus preferencias -->
+    </string-array>
+</resources>

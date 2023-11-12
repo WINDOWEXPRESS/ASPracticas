@@ -17,14 +17,16 @@ public class SelectorPersonajes extends AppCompatActivity {
     public static final String CLAVE_ARMA1 = "adsaDafasda";
     public static final String CLAVE_PERSONAJE2 = "DASDaSDsADSAada";
     public static final String CLAVE_ARMA2 = "adsaDafaSDASda";
+    public static final String CLAVE_PERSONAJES_ARMAS_SIN_ELEGIR = "DSAfasddqw";
     ImageView personaje1 ,personaje2,arma1,arma2;
     Button seleccionarPersonaje1,seleccionarPersonaje2;
-    PersonajesEnum  personaje1SeleccionadoEnum = PersonajesEnum.DONATELLO;
-    PersonajesEnum  personaje2SeleccionadoEnum = PersonajesEnum.LEONARDO;
-    ArmasEnum  arma1SeleccionadoEnum = ArmasEnum.AK47;
-    ArmasEnum  arma2SeleccionadoEnum = ArmasEnum.AMETRALLADORA;
+    PersonajesEnum  personaje1SeleccionadoEnum ;
+    PersonajesEnum  personaje2SeleccionadoEnum ;
+    ArmasEnum  arma1SeleccionadoEnum ;
+    ArmasEnum  arma2SeleccionadoEnum ;
     ArraySet<PersonajesEnum> listaPersonajesEnum = new ArraySet<>();
     ArmasEnum[] listaArmasEnum = ArmasEnum.values();
+    boolean personajeArmaSinElegir = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,13 +101,18 @@ public class SelectorPersonajes extends AppCompatActivity {
 
     private void iniciarARL(ActivityResultLauncher<Intent> lanzadora) {
         Intent datos = new Intent(this, PerfilPersonajes.class);
-        //pasar id de los personajes y las armas para que no pueda elegirlo
-        datos.putExtra(CLAVE_PERSONAJE1, personaje1SeleccionadoEnum.toString());
-        datos.putExtra(CLAVE_ARMA1, arma1SeleccionadoEnum.toString());
-        datos.putExtra(CLAVE_PERSONAJE2, personaje2SeleccionadoEnum.toString());
-        datos.putExtra(CLAVE_ARMA2, arma2SeleccionadoEnum.toString());
 
-        lanzadora.launch(datos);
+        if (personajeArmaSinElegir == true){
+            datos.putExtra(CLAVE_PERSONAJES_ARMAS_SIN_ELEGIR, personajeArmaSinElegir);
+            lanzadora.launch(datos);
+        }else{
+            //pasar id de los personajes y las armas para que no pueda elegirlo
+            datos.putExtra(CLAVE_PERSONAJE1, personaje1SeleccionadoEnum.toString());
+            datos.putExtra(CLAVE_ARMA1, arma1SeleccionadoEnum.toString());
+            datos.putExtra(CLAVE_PERSONAJE2, personaje2SeleccionadoEnum.toString());
+            datos.putExtra(CLAVE_ARMA2, arma2SeleccionadoEnum.toString());
+            lanzadora.launch(datos);
+        }
     }
 
 

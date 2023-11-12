@@ -42,18 +42,16 @@ public class PerfilArmas extends AppCompatActivity {
         addListaArmas();
 
         Bundle datos = getIntent().getExtras();
-        String armaP1Seleccionado = datos.getString(PerfilPersonajes.CLAVE_ARMA1_ENVIAR);
-        String armaP2Seleccionado = datos.getString(PerfilPersonajes.CLAVE_ARMA2_ENVIAR);
 
-
+        //String armaP1Seleccionado = datos.getString(PerfilPersonajes.CLAVE_ARMA1_ENVIAR);
+        //String armaP2Seleccionado = datos.getString(PerfilPersonajes.CLAVE_ARMA2_ENVIAR);
 
         ak47.setOnClickListener(v -> armaSeleccionado( v));
         doublePistolas.setOnClickListener(v -> armaSeleccionado( v));
         ametralladora.setOnClickListener(v -> armaSeleccionado( v));
         rifle.setOnClickListener(v -> armaSeleccionado( v));
 
-
-        bloquearArmas( armaP1Seleccionado, armaP2Seleccionado);
+        //bloquearArmas( armaP1Seleccionado, armaP2Seleccionado);
 
         confirmar.setOnClickListener(v -> {
             if(armaSeleccionado != null){
@@ -63,9 +61,6 @@ public class PerfilArmas extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
     }
 
 
