@@ -77,5 +77,7 @@
     <string name="finalizar">Finalizar</string>
     <string name="analizar">Analizar</string>
     <string name="introducir_el_texto">Introducir el texto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
