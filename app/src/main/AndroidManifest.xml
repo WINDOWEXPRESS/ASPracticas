@@ -37,13 +37,13 @@
             android:exported="false" />
         <activity
             android:name=".ut03.u3e8.CrearMonstruo"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut03.u3e7.PerfilArmas"
             android:exported="false" />
@@ -52,13 +52,13 @@
             android:exported="false" />
         <activity
             android:name=".ut03.u3e7.SelectorPersonajes"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut03.u3e6.AnalizadorLetras"
             android:exported="false" />
@@ -70,13 +70,13 @@
             android:exported="false" />
         <activity
             android:name=".ut03.u3e5.Fibonacci"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut03.u3e4.MostrarNombre"
             android:exported="false" />
@@ -103,31 +103,31 @@
             android:exported="false" />
         <activity
             android:name=".ut02.u2e6.JuegoPierdraPapelTijera"
-            android:exported="true">
-            <intent-filter>
+                android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut02.u2e5.PedirCita"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut02.u2e3.Propinatron2000"
-            android:exported="true">
-            <intent-filter>
+            android:exported="true"/>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
         <activity
             android:name=".ut02.u2e2.u2a2Coloneitor"
             android:exported="true" />

@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".ut04.ContadorConFragment">
 
+    <TextView
+        android:id="@+id/u4a1_tView_noEstudiar"
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:gravity="center|center_horizontal"
+        android:text="Puntos por no estudiar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a1_fCView_noEstudiar"
+        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:layout_width="409dp"
+        android:layout_height="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1_tView_noEstudiar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a1_fCView_noInsultar"
+        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1_tView_noInsultar" />
+
+    <TextView
+        android:id="@+id/u4a1_tView_noInsultar"
+        android:layout_width="409dp"
+        android:layout_height="121dp"
+        android:gravity="center|center_horizontal"
+        android:text="Puntos por no insultar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1_fCView_noEstudiar" />
+
+    <TextView
+        android:id="@+id/u4a1_tView_noFumar"
+        android:layout_width="409dp"
+        android:layout_height="121dp"
+        android:gravity="center|center_horizontal"
+        android:text="Puntos por no fumar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1_fCView_noInsultar" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4a1_fCView_nofumar"
+        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:layout_width="409dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4a1_tView_noFumar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
