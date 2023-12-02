@@ -100,7 +100,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.u3e1.u3a1_Lanza"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ut02.u2e6.JuegoPierdraPapelTijera"
                 android:exported="true"/>
