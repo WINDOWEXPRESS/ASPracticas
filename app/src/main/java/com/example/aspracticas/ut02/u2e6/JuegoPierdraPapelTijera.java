@@ -110,13 +110,14 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
                 if (isGameOver()) {
                     finDeJuego();
                     vibracionPerderPartida();
-                }else {
+                } else {
                     rondaNueva();
                 }
             }
         });
     }
-    private void vibracionPerderPartida(){
+
+    private void vibracionPerderPartida() {
         // Verifica si el dispositivo tiene la capacidad de vibración
         if (vibrador.hasVibrator()) {
             // Vibración usando VibrationEffect (para Android API nivel 26 y superior)
@@ -124,7 +125,8 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
             vibrador.vibrate(vibrationEffect);
         }
     }
-    private void vibracionPerder(){
+
+    private void vibracionPerder() {
         // Verifica si el dispositivo tiene la capacidad de vibración
         if (vibrador.hasVibrator()) {
             // Vibración usando VibrationEffect (para Android API nivel 26 y superior)
@@ -132,7 +134,8 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
             vibrador.vibrate(vibrationEffect);
         }
     }
-    private void vibracionGanar(){
+
+    private void vibracionGanar() {
         // Verifica si el dispositivo tiene la capacidad de vibración
         if (vibrador.hasVibrator()) {
             // Vibración usando VibrationEffect (para Android API nivel 26 y superior)
@@ -194,6 +197,7 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
             vida.setImageResource(R.drawable.u2a6_vida_llena);
         }
     }
+
     private void restarVidaAnimacion(ImageView[] vidas, int vidaActual) {
         if (vidaActual != -1) {
             //-1 por el indice empieza por 0
@@ -202,6 +206,8 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
     }
 
     private void setOpcionJugador(ImageView vista, Opcion opcion) {
+        //Limpiar el texto de bot
+        mensajeBot.setText(R.string.u2a6_mensaje_bot);
         //Limpiar los bordes
         limpiarForeGroundOpciones();
         // Establecer el border para la opcion seleccionada
@@ -215,22 +221,11 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
     }
 
     private void setOpcionBot() {
-        //Solo existen 3 opciones
-        int min = 1; // Número mínimo (inclusive)
-        int max = 3; // Número máximo (inclusive)
-        int numeroAleatorio = (int) (Math.random() * (max - min + 1) + min);
-        //crear una array de ENUM .values() todas instancias de ENUM
-        Opcion[] opciones = Opcion.values();
-        // Usar un bucle for para recorrer la enumeración
-        for (Opcion opcion : opciones) {
-            if (numeroAleatorio == opcion.valorNumerico) {
-                //asignar valor a instancia
-                enum_opcionBot = opcion;
-            }
-        }
+        //En enum de bot guarda aleatorio un valor de Opcion
+        enum_opcionBot = Opcion.values()[(int) (Math.random() * (Opcion.values().length))];
     }
 
-    private void alertDialogReiniciar(){
+    private void alertDialogReiniciar() {
         AlertDialog.Builder dialogo = new AlertDialog.Builder(this);
         dialogo.setTitle(R.string.u2a6_titulo_dialogo_reiniciar);
         dialogo.setMessage(R.string.u2a6_mensaje_dialogo_reiniciar);
@@ -312,9 +307,9 @@ public class JuegoPierdraPapelTijera extends AppCompatActivity {
     private void finDeJuego() {
         //Mensaje de fin de juego
         mensajeBot.setText(null);
-        if (vidaJugador == 0){
+        if (vidaJugador == 0) {
             mensajeSalida.setText(R.string.u2a6_fin_de_juego_perdido);
-        }else {
+        } else {
             mensajeSalida.setText(R.string.u2a6_fin_de_juego_ganado);
 
         }
