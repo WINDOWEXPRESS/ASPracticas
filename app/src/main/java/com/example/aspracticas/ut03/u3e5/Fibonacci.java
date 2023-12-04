@@ -35,20 +35,20 @@ public class Fibonacci extends AppCompatActivity {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Bundle data = result.getData().getExtras();
                         primeroNumeroFibo.setText(segundoNumeroFibo.getText().toString());
-                        //segundoNumeroFibo.setText(""+data.getInt(SiguienteNumero.CLAVE_VALOR));
+                        segundoNumeroFibo.setText(""+data.getInt(SiguienteNumero.CLAVE_VALOR));
                     }
         });
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*
+
                 Intent i = new Intent(Fibonacci.this,SiguienteNumero.class);
                 i.putExtra(CLAVE_PRIMER_VALOR,Integer.parseInt(primeroNumeroFibo.getText().toString()));
                 i.putExtra(CLAVE_SEGUNDO_VALOR,Integer.parseInt(segundoNumeroFibo.getText().toString()));
 
                 lanzador.launch(i);
-                */
+
             }
         });
 

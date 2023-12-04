@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.ContadorConFragment">
+    tools:context=".ut04.u4e1.ContadorConFragment">
 
     <TextView
         android:id="@+id/u4a1_tView_noEstudiar"
@@ -19,7 +19,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/u4a1_fCView_noEstudiar"
-        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:name="com.example.aspracticas.ut04.u4e1.ContadorFragment"
         android:layout_width="409dp"
         android:layout_height="121dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/u4a1_fCView_noInsultar"
-        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:name="com.example.aspracticas.ut04.u4e1.ContadorFragment"
         android:layout_width="409dp"
         android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +58,8 @@
         app:layout_constraintTop_toBottomOf="@+id/u4a1_fCView_noInsultar" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/u4a1_fCView_nofumar"
-        android:name="com.example.aspracticas.ut04.ContadorFragment"
+        android:id="@+id/u4a1_fCView_noFumar"
+        android:name="com.example.aspracticas.ut04.u4e1.ContadorFragment"
         android:layout_width="409dp"
         android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="parent"

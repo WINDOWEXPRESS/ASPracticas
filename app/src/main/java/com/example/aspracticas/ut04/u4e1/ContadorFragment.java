@@ -1,6 +1,5 @@
-package com.example.aspracticas.ut04;
+package com.example.aspracticas.ut04.u4e1;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,28 +8,34 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.aspracticas.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ColorFragment#newInstance} factory method to
+ * Use the {@link ContadorFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ColorFragment extends Fragment {
+public class ContadorFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private static final double COLOR_RANGE = 255;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public ColorFragment() {
+    public ContadorFragment() {
         // Required empty public constructor
+    }
+
+    private Observer observer;
+
+    public void setObserver(Observer obs) {
+        this.observer = obs;
     }
 
     /**
@@ -39,19 +44,17 @@ public class ColorFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ColorFragment.
+     * @return A new instance of fragment ContadorFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ColorFragment newInstance(String param1, String param2) {
-        ColorFragment fragment = new ColorFragment();
+    public static ContadorFragment newInstance(String param1, String param2) {
+        ContadorFragment fragment = new ContadorFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
-
-    TextView color ;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,24 +65,27 @@ public class ColorFragment extends Fragment {
         }
     }
 
+    private TextView texto;
+    private View rootView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View layout = inflater.inflate(R.layout.u4_fragment_color, container, false);
 
-        color = layout.findViewById(R.id.u4_tView_color);
-
-        color.setOnClickListener((v)->{
-            color.setBackgroundColor(
-                    Color.argb(
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE),
-                            (int) (Math.random()*COLOR_RANGE)
-                    )
-            );
+        if (rootView == null) {
+            rootView = inflater.inflate(R.layout.u4a1_fragment_contador, container, false);
+        }
+        texto = rootView.findViewById(R.id.u4a1_tView_fragment);
+        texto.setOnClickListener(v -> {
+            if (observer != null) {
+                observer.sendMsgToActivity(" | ");
+                Toast.makeText(ContadorFragment.this.getContext(), "Exito", Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(ContadorFragment.this.getContext(), "Fracaso", Toast.LENGTH_LONG).show();
+            }
         });
-
-        return layout;
+        return rootView;
     }
+
+
 }

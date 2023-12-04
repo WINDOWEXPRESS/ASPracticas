@@ -13,25 +13,35 @@ import android.widget.ImageView;
 import com.example.aspracticas.R;
 
 public class SelectorPersonajes extends AppCompatActivity {
+
+    // Claves para pasar datos entre actividades
     public static final String CLAVE_PERSONAJE1 = "DASDaSDsada";
     public static final String CLAVE_ARMA1 = "adsaDafasda";
     public static final String CLAVE_PERSONAJE2 = "DASDaSDsADSAada";
     public static final String CLAVE_ARMA2 = "adsaDafaSDASda";
     public static final String CLAVE_PERSONAJES_ARMAS_SIN_ELEGIR = "DSAfasddqw";
-    ImageView personaje1 ,personaje2,arma1,arma2;
-    Button seleccionarPersonaje1,seleccionarPersonaje2;
-    PersonajesEnum  personaje1SeleccionadoEnum ;
-    PersonajesEnum  personaje2SeleccionadoEnum ;
-    ArmasEnum  arma1SeleccionadoEnum ;
-    ArmasEnum  arma2SeleccionadoEnum ;
+
+    // Componentes de la interfaz de usuario
+    ImageView personaje1, personaje2, arma1, arma2;
+    Button seleccionarPersonaje1, seleccionarPersonaje2;
+
+    // Enumeración de personajes y arreglo de armas
+    PersonajesEnum personaje1SeleccionadoEnum;
+    PersonajesEnum personaje2SeleccionadoEnum;
+    ArmasEnum arma1SeleccionadoEnum;
+    ArmasEnum arma2SeleccionadoEnum;
     ArraySet<PersonajesEnum> listaPersonajesEnum = new ArraySet<>();
     ArmasEnum[] listaArmasEnum = ArmasEnum.values();
+
+    // Indica si se ha seleccionado un personaje y un arma
     boolean personajeArmaSinElegir = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u3a7_selector_personajes);
 
+        // Inicializar componentes de la interfaz
         personaje1 = findViewById(R.id.u3a7_iView_personaje1);
         personaje2 = findViewById(R.id.u3a7_iView_personaje2);
         arma1 = findViewById(R.id.u3a7_iView_arma1);
@@ -39,8 +49,10 @@ public class SelectorPersonajes extends AppCompatActivity {
         seleccionarPersonaje1 = findViewById(R.id.u3a7_bt_seleccionar1);
         seleccionarPersonaje2 = findViewById(R.id.u3a7_bt_seleccionar2);
 
+        // Crear la lista de personajes
         listaPersonajesEnum();
 
+        // Configurar lanzadores de actividades con resultados
         ActivityResultLauncher<Intent> lanzadoraP1 = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), (result) -> {
             if (result.getResultCode() == Activity.RESULT_OK) {
 
@@ -61,10 +73,11 @@ public class SelectorPersonajes extends AppCompatActivity {
                             arma1SeleccionadoEnum = listaArmasEnum[i];
                         }
                     }
-
                 }
             }
         });
+
+        // Configurar lanzadores de actividades con resultados
         ActivityResultLauncher<Intent> lanzadoraP2 = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), (result) -> {
             if (result.getResultCode() == Activity.RESULT_OK) {
 
@@ -85,12 +98,11 @@ public class SelectorPersonajes extends AppCompatActivity {
                             arma2SeleccionadoEnum = listaArmasEnum[i];
                         }
                     }
-
                 }
             }
         });
 
-
+        // Manejadores de clic para los botones de selección de personajes
         seleccionarPersonaje1.setOnClickListener(v -> {
             iniciarARL(lanzadoraP1);
         });
@@ -99,14 +111,16 @@ public class SelectorPersonajes extends AppCompatActivity {
         });
     }
 
+    // Método para iniciar el lanzador de actividad con resultado
     private void iniciarARL(ActivityResultLauncher<Intent> lanzadora) {
         Intent datos = new Intent(this, PerfilPersonajes.class);
 
         if (personajeArmaSinElegir == true){
+            // Indicar que no se han elegido personajes y armas
             datos.putExtra(CLAVE_PERSONAJES_ARMAS_SIN_ELEGIR, personajeArmaSinElegir);
             lanzadora.launch(datos);
         }else{
-            //pasar id de los personajes y las armas para que no pueda elegirlo
+            // Pasar los identificadores de personajes y armas ya seleccionados para que no pueda elegirlo
             datos.putExtra(CLAVE_PERSONAJE1, personaje1SeleccionadoEnum.toString());
             datos.putExtra(CLAVE_ARMA1, arma1SeleccionadoEnum.toString());
             datos.putExtra(CLAVE_PERSONAJE2, personaje2SeleccionadoEnum.toString());

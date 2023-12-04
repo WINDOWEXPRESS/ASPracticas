@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut04.EjemploFragments">
+    tools:context=".ut04.ejemplo.EjemploFragments">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView2"
-        android:name="com.example.aspracticas.ut04.ColorFragment"
+        android:name="com.example.aspracticas.ut04.ejemplo.ColorFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView3"
@@ -19,7 +19,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.aspracticas.ut04.ColorFragment"
+        android:name="com.example.aspracticas.ut04.ejemplo.ColorFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView4"
@@ -30,7 +30,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView3"
-        android:name="com.example.aspracticas.ut04.ColorFragment"
+        android:name="com.example.aspracticas.ut04.ejemplo.ColorFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,7 +41,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView4"
-        android:name="com.example.aspracticas.ut04.ColorFragment"
+        android:name="com.example.aspracticas.ut04.ejemplo.ColorFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
