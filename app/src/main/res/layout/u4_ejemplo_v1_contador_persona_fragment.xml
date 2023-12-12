@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut04.ejemplo_v1.ContadorPersonaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03A9F4">
+
+        <TextView
+            android:id="@+id/u4_ejemplo_v1_tVIew_restar_fragment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Restar"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/u4_ejemplo_v1_tVIew_sumar_fragment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/u4_ejemplo_v1_tVIew_sumar_fragment"
+            app:layout_constraintTop_toBottomOf="@+id/u4_ejemplo_v1_tVIew_sumar_fragment" />
+
+        <TextView
+            android:id="@+id/u4_ejemplo_v1_tVIew_sumar_fragment"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Sumar"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/u4_ejemplo_v1_tVIew_tipo_fragment"
+            android:layout_width="253dp"
+            android:layout_height="181dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/u4_ejemplo_v1_tVIew_restar_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/u4_ejemplo_v1_tVIew_sumar_fragment"
+            app:layout_constraintTop_toTopOf="@+id/u4_ejemplo_v1_tVIew_sumar_fragment"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

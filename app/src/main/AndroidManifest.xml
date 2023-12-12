@@ -15,6 +15,33 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
+            android:name=".ejemplos.DateP"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ejemplos.Chronometro"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.ejemplo_v1.ContadorPasajeros"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ut04.ejemplo.ComunicacionEntreFragment"
             android:exported="true">
             <intent-filter>

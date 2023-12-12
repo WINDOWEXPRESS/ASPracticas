@@ -86,7 +86,6 @@ public class ContadorFragment_v1 extends Fragment {
            /* if (observer != null) {
                 String textoFromActivity = observer.getMsgToActivity("null");
                 texto.setText(textoFromActivity);
-                //texto.setText("textoFromActivity");
                 Toast.makeText(ContadorFragment_v1.this.getContext(), "Exito", Toast.LENGTH_LONG).show();
             }else{
                 Toast.makeText(ContadorFragment_v1.this.getContext(), "Fracaso", Toast.LENGTH_LONG).show();

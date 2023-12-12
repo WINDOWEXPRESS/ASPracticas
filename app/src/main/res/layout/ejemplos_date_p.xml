@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejemplos.DateP">
+
+    <!--on below line we are creating
+        a text for our app-->
+
+    <!--on below line we are creating a text view-->
+
+    <!--on below line we are creating
+        a button for date picker-->
+
+    <TextView
+        android:id="@+id/ejemplos_idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ejemplos_idTVSelectedDate"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Date Picker Dialog in Android"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ejemplos_idTVSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ejemplos_idBtnPickDate"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ejemplos_idTVHeading"
+        app:layout_constraintStart_toStartOf="@+id/ejemplos_idTVHeading"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplos_idTVHeading" />
+
+    <Button
+        android:id="@+id/ejemplos_idBtnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="204dp"
+        android:text="Pick Date"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/ejemplos_idTVSelectedDate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/ejemplos_idTVSelectedDate"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplos_idTVSelectedDate" />
+
+    <TextView
+        android:id="@+id/ejemplos_idTVPickDate_minimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ejemplos_idBtnPickDate"
+        app:layout_constraintStart_toStartOf="@+id/ejemplos_idBtnPickDate"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplos_idBtnPickDate" />
+
+    <Button
+        android:id="@+id/ejemplos_idBtnPickDate_minimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:text="Pick Date"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/ejemplos_idTVPickDate_minimo"
+        app:layout_constraintStart_toStartOf="@+id/ejemplos_idTVPickDate_minimo"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplos_idTVPickDate_minimo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
