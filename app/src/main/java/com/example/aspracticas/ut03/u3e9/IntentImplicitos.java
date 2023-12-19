@@ -43,6 +43,7 @@ public class IntentImplicitos extends AppCompatActivity {
             Uri uri = Uri.parse("tel:+34 622333444");
             Intent intent = new Intent(Intent.ACTION_DIAL,uri);
             startActivity(intent);
+
         });
 
         enviarSMS.setOnClickListener(v -> {
