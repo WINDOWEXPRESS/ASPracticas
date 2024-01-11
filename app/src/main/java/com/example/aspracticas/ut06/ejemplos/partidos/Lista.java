@@ -19,7 +19,7 @@ public class Lista extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.u6_ejemplos_lista);
+        setContentView(R.layout.u6e_partido_lista);
 
         reyclerViewUser = findViewById(R.id.u6_ejemplos_recyclerView_resultados);
 

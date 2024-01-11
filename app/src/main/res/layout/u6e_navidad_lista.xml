@@ -8,10 +8,48 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/u6e_rccView_lista"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="411dp"
+        android:layout_height="684dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u6e_navidad_tView_frutoSeco" />
+
+    <TextView
+        android:id="@+id/u6e_navidad_tView_nombreDulce"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/u6e_navidad_tView_frutoSeco"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u6e_navidad_tView_frutoSeco"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Fruto seco"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/u6e_navidad_tView_caloria"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/u6e_navidad_tView_nombreDulce"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u6e_navidad_tView_caloria"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="Caloria"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/u6e_navidad_tView_frutoSeco"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 public class u6e_navidad_Lista extends AppCompatActivity {
     RecyclerView reyclerViewUser;
-    DulcesNavidadRecyclerViewAdapter adapter;
+    DulcesNavidadAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class u6e_navidad_Lista extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this.getApplicationContext());
         reyclerViewUser.setLayoutManager(layoutManager);
 
-        adapter = new DulcesNavidadRecyclerViewAdapter(Arrays.asList(DulcesNavidad.generarDulcesNavidad(10)));
+        adapter = new DulcesNavidadAdapter(Arrays.asList(DulcesNavidad.generarDulcesNavidad(20)));
         reyclerViewUser.setAdapter(adapter);
 
     }

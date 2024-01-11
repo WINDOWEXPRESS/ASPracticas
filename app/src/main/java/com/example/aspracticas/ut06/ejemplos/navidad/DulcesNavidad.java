@@ -9,6 +9,7 @@ import java.util.Random;
 
 public class DulcesNavidad {
     private static final int MAX_CALORIA = 10000;
+    private static final int CANTIDAD_DECIMAL = 100;// 100 = 2 decimal
     private String nombre;
     private boolean frutoSeco;
     private double caloria;
@@ -32,7 +33,7 @@ public class DulcesNavidad {
         Collections.shuffle(listaDulcesNavidad);
         DulcesNavidad dulcesNavidad = new DulcesNavidad();
         dulcesNavidad.nombre= listaDulcesNavidad.get(0);
-        dulcesNavidad.caloria = (Math.random() * MAX_CALORIA);
+        dulcesNavidad.caloria = Math.round((Math.random() * MAX_CALORIA));
         // utiliza la clase Random para generar un valor booleano aleatorio con nextBoolean().
         Random random = new Random();
         dulcesNavidad.frutoSeco =  random.nextBoolean();
