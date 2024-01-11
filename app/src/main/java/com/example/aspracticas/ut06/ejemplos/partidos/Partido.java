@@ -1,4 +1,4 @@
-package com.example.aspracticas.ut06.ejemplos;
+package com.example.aspracticas.ut06.ejemplos.partidos;
 
 import java.util.ArrayList;
 import java.util.Arrays;
