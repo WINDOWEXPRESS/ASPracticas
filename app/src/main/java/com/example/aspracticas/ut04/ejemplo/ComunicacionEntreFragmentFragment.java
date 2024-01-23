@@ -65,7 +65,7 @@ public class ComunicacionEntreFragmentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View layout =  inflater.inflate(R.layout.u4ejemplo_fragment_comunicacion_entre_fragment, container, false);
+        View layout =  inflater.inflate(R.layout.u4e_fragment_comunicacion_entre_fragment, container, false);
 
         textView = layout.findViewById(R.id.u4ejemplo_tView_fragment);
 

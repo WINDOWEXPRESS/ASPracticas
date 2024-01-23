@@ -28,7 +28,7 @@ public class EjemploPermiso extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.u5_ejemplo_permiso);
+        setContentView(R.layout.u5e_permiso);
 
         llamar = findViewById(R.id.u5_ejemplos_bt_llamar);
 

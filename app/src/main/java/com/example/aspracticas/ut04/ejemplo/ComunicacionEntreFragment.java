@@ -11,6 +11,6 @@ public class ComunicacionEntreFragment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.u4ejemplo_comunicacion_entre_fragment);
+        setContentView(R.layout.u4e_comunicacion_entre_fragment);
     }
 }
