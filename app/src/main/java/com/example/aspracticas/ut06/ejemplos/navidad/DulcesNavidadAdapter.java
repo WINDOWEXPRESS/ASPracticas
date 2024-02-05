@@ -3,13 +3,18 @@ package com.example.aspracticas.ut06.ejemplos.navidad;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.aspracticas.R;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -20,16 +25,23 @@ import java.util.List;
 public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdapter.ViewHolder> {
 
     private final List<DulcesNavidad> DulcesNavidad;
-
+    private Context context;
+    public DulcesNavidadAdapter(List<DulcesNavidad> dulces, Context context) {
+        DulcesNavidad = dulces;
+        this.context = context;
+    }
     public DulcesNavidadAdapter(List<DulcesNavidad> dulces) {
         DulcesNavidad = dulces;
     }
+
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // Create a new view, which defines the UI of the list item
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.u6e_fragment_dulces_navidad_adapter, parent, false);
+
 
         return new ViewHolder(view);
     }
@@ -41,6 +53,13 @@ public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdap
         holder.getFrutoSeco().setText((DulcesNavidad.get(position).isFrutoSeco()?" si ": " no "));
         holder.getCaloria().setText(DulcesNavidad.get(position).getCaloria()+"kJ");
 
+        // Configura el OnClickListener para el elemento de la lista
+        holder.itemView.setOnClickListener(v -> {
+            // Lanza un Intent al hacer clic en el artículo
+            Intent intent = new Intent(context, DulceNavidadDetalle.class);
+            intent.putExtra("ARTICLE_ID",  DulcesNavidad.get(position));
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -58,6 +77,7 @@ public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdap
             nombreDulce = binding.findViewById(R.id.u6e_navidad_nombreDulce);
             frutoSeco = binding.findViewById(R.id.u6e_navidad_frutoSeco);
             caloria = binding.findViewById(R.id.u6e_navidad_caloria);
+
         }
 
         public TextView getNombreDulce() {

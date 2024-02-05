@@ -2,14 +2,14 @@ package com.example.aspracticas.ut06.ejemplos.navidad;
 
 import com.example.aspracticas.ut06.ejemplos.partidos.Partido;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class DulcesNavidad {
+public class DulcesNavidad implements Serializable {
     private static final int MAX_CALORIA = 10000;
-    private static final int CANTIDAD_DECIMAL = 100;// 100 = 2 decimal
     private String nombre;
     private boolean frutoSeco;
     private double caloria;

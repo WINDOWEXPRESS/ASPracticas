@@ -20,6 +20,9 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
+            android:name=".ut06.ejemplos.navidad.DulceNavidadDetalle"
+            android:exported="false" />
+        <activity
             android:name=".ut06.ejemplos.navidad.u6e_navidad_Lista"
             android:exported="true">
             <intent-filter>
