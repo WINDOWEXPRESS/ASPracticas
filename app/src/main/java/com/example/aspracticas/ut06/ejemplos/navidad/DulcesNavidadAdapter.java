@@ -42,7 +42,6 @@ public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdap
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.u6e_fragment_dulces_navidad_adapter, parent, false);
 
-
         return new ViewHolder(view);
     }
 
@@ -54,11 +53,15 @@ public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdap
         holder.getCaloria().setText(DulcesNavidad.get(position).getCaloria()+"kJ");
 
         // Configura el OnClickListener para el elemento de la lista
-        holder.itemView.setOnClickListener(v -> {
-            // Lanza un Intent al hacer clic en el artículo
-            Intent intent = new Intent(context, DulceNavidadDetalle.class);
-            intent.putExtra("ARTICLE_ID",  DulcesNavidad.get(position));
-            context.startActivity(intent);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lanza un Intent al hacer clic en el artículo
+                Intent intent = new Intent(context, DulceNavidadDetalle.class);
+                intent.putExtra("ARTICLE_ID", DulcesNavidad.get(position));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
         });
     }
 

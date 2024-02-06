@@ -27,7 +27,7 @@ public class u6e_navidad_Lista extends AppCompatActivity {
         reyclerViewUser.setLayoutManager(layoutManager);
 
         //adapter = new DulcesNavidadAdapter(Arrays.asList(DulcesNavidad.generarDulcesNavidad(20)));
-        adapter = new DulcesNavidadAdapter(Arrays.asList(DulcesNavidad.generarDulcesNavidad(20)),getApplicationContext());
+        adapter = new DulcesNavidadAdapter(Arrays.asList(DulcesNavidad.generarDulcesNavidad(20)),this.getApplicationContext());
 
         reyclerViewUser.setAdapter(adapter);
 
