@@ -1,12 +1,13 @@
 package com.example.aspracticas.ut9.ejemplos.pokeapi.datos;
 
+import java.util.List;
+
 public class PojoPokemon {
     private int id;
     private String name;
     private int height;
     private int weight;
     private int orden;
-    private String imgUrl;
 
     public int getId() {
         return id;
@@ -28,7 +29,4 @@ public class PojoPokemon {
         return orden;
     }
 
-    public String getImgUrl() {
-        return imgUrl;
-    }
 }

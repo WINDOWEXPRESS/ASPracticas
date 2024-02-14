@@ -22,15 +22,32 @@
         android:theme="@style/Theme.ASPracticas"
         tools:targetApi="31">
         <activity
-            android:name=".ut9.ejemplos.pokeapi.datos.BuscarInfoPokemon"
-            android:exported="true" >
+            android:name=".ut9.ejemplos.pokeapigpt.InfoPokemon"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ut8.ejemplos.numeroaleatorio.NumeroAleatorio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut9.ejemplos.pokeapi.BuscarInfoPokemon"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ut06.ejemplos.navidad.DulceNavidadDetalle"
             android:exported="false" />

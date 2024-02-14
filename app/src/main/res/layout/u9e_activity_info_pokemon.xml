@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ut9.ejemplos.pokeapi.BuscarInfoPokemon">
+    tools:context=".ut9.ejemplos.pokeapigpt.InfoPokemon">
 
     <EditText
-        android:id="@+id/u9e_editTT_nombre"
+        android:id="@+id/u9e_infoP_editTT_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -20,15 +20,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/u9e_button_buscar"
+        android:id="@+id/u9e_infoP_button_buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Buscar"
-        app:layout_constraintEnd_toEndOf="@+id/u9e_editTT_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/u9e_infoP_editTT_nombre"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="@+id/u9e_editTT_nombre"
-        app:layout_constraintTop_toBottomOf="@+id/u9e_editTT_nombre" />
+        app:layout_constraintStart_toStartOf="@+id/u9e_infoP_editTT_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/u9e_infoP_editTT_nombre" />
 
     <LinearLayout
         android:layout_width="409dp"
@@ -38,70 +38,76 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u9e_button_buscar">
+        app:layout_constraintTop_toBottomOf="@+id/u9e_infoP_button_buscar">
 
         <TextView
-            android:id="@+id/u9e_textV_infoId"
+            android:id="@+id/u9e_infoP_textV_infoId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Id"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_id"
+            android:id="@+id/u9e_infoP_textV_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_infoNombre"
+            android:id="@+id/u9e_infoP_textV_infoNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_Nombre"
+            android:id="@+id/u9e_infoP_textV_Nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_infoAltura"
+            android:id="@+id/u9e_infoP_textV_infoAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Altura"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_altura"
+            android:id="@+id/u9e_infoP_textV_altura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_infoPeso"
+            android:id="@+id/u9e_infoP_textV_infoPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Peso"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/u9e_textV_peso"
+            android:id="@+id/u9e_infoP_textV_peso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="24sp" />
-
+        <ImageView
+            android:id="@+id/u9e_infoP_imageV_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <ProgressBar
-            android:id="@+id/u9e_progressB_cargando"
+            android:id="@+id/u9e_infoP_progressB_cargando"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
+            android:visibility="invisible"
             android:layout_height="207dp" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

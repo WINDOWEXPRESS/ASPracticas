@@ -57,8 +57,8 @@ public class DulcesNavidadAdapter extends RecyclerView.Adapter<DulcesNavidadAdap
             @Override
             public void onClick(View v) {
                 // Lanza un Intent al hacer clic en el artículo
-                Intent intent = new Intent(context, DulceNavidadDetalle.class);
-                intent.putExtra("ARTICLE_ID", DulcesNavidad.get(position));
+                Intent intent = new Intent(holder.itemView.getContext(), DulceNavidadDetalle.class);
+                intent.putExtra("ARTICLE_ID", DulcesNavidad.get(holder.getBindingAdapterPosition()));
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
