@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
-import android.security.keystore.KeyProperties;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,12 +14,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.aspracticas.R;
-import com.example.aspracticas.ejemplos.SaltMD5Util;
-
-import java.security.SecureRandom;
-import java.util.UUID;
-
-import javax.crypto.KeyGenerator;
 
 public class InfoPokemon extends AppCompatActivity {
 
